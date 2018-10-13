@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteGray">
+
+    <!--头部-->
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorApp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/colorApp"
+            android:gravity="center"
+            android:text="资讯"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhiteGray"
+            android:textSize="18dp" />
+
+        <!--<ImageButton-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:background="@color/colorApp"-->
+            <!--android:src="@drawable/ic_home_add" />-->
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/selection"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_below="@id/bar"-->
+        <!--android:layout_marginTop="1dp"-->
+        <!--android:background="@color/colorWhite">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.example.common.views.CircleImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@mipmap/ic_logistics"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_gravity="center"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="物流"-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="5dp"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.example.common.views.CircleImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@mipmap/ic_friend"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_gravity="center"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="好友"-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_gravity="center"/>-->
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.example.common.views.CircleImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@mipmap/ic_find"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_gravity="center"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="发现"-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="5dp"/>-->
+
+        <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/bar"-->
+        <!--android:background="@color/colorWhite"-->
+        <!--android:layout_marginTop="1dp">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/store_avatar"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:src="@mipmap/sky"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:layout_centerVertical="true"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/store_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toEndOf="@+id/store_avatar"-->
+            <!--android:layout_toRightOf="@+id/store_avatar"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:text="最新资讯"-->
+            <!--android:textSize="18dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:text="18/04/1"-->
+            <!--android:textColor="@color/colorGray"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:id="@+id/textView" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/store_name"-->
+            <!--android:layout_toEndOf="@+id/store_avatar"-->
+            <!--android:layout_toRightOf="@+id/store_avatar"-->
+            <!--android:text="铁回收的价值"-->
+            <!--android:textColor="@color/colorGray"-->
+            <!--android:textSize="14dp"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:layout_marginBottom="8dp"/>-->
+       <!---->
+    <!--</RelativeLayout>-->
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_below="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

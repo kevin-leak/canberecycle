@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteGray">
+
+    <!--头部-->
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorApp">
+
+
+
+        <SearchView
+            android:id="@+id/sv_search_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="left|center_vertical"
+            android:iconifiedByDefault="false"
+            android:inputType="textFilter"
+            android:queryHint="输入要查询的资源"
+            android:textColor="#ABABAB"
+            android:textColorHint="#ABABAB"
+            android:background="@drawable/search" />
+
+    </LinearLayout>
+
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_below="@id/bar"-->
+        <!--android:layout_marginTop="1dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="@color/colorWhite">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text="类别"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text="类别"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text="类别"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text="类别"/>-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text="类别"/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:src="@drawable/ic_view_list"-->
+            <!--android:scaleType="center"/>-->
+    <!--</LinearLayout>-->
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sf_goods_list"
+        android:layout_below="@id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

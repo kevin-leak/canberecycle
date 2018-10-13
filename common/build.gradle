@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // LeanCloud 基础包
+    compile ('cn.leancloud.android:avoscloud-sdk:v4.6.4')
+
+    // 推送与实时聊天需要的包
+    compile ('cn.leancloud.android:avoscloud-push:v4.6.4@aar'){transitive = true}
+
+    // LeanCloud 统计包
+    compile ('cn.leancloud.android:avoscloud-statistics:v4.6.4')
+
+    // LeanCloud 用户反馈包
+    compile ('cn.leancloud.android:avoscloud-feedback:v4.6.4@aar')
+
+    // avoscloud-sns：LeanCloud 第三方登录包
+    compile ('cn.leancloud.android:avoscloud-sns:v4.6.4@aar')
+    compile ('cn.leancloud.android:qq-sdk:1.6.1-leancloud')
+
+    // LeanCloud 应用内搜索包
+    compile ('cn.leancloud.android:avoscloud-search:v4.6.4@aar')
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    compile project(":leancloudchatkit")
+
+}

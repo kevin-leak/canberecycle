@@ -1,0 +1,1 @@
+include ':app', ':common', ':mine', ':home', ':car', ':message', ':recycle',':leancloudchatkit'

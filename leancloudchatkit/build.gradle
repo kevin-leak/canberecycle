@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    //noinspection GradleCompatible
+    compile 'com.android.support:support-v4:25.4.0'
+    compile 'com.android.support:appcompat-v7:25.4.0'
+
+//    compile fileTree(dir:"libs", include:["*.jar"])
+    //avoscloud-sdk 为 LeanCloud基础包
+    compile ('cn.leancloud.android:avoscloud-sdk:v4.5.4')
+    //avoscloud-push 为推送与实时聊天需要的包
+    compile('cn.leancloud.android:avoscloud-push:v4.5.4@aar') { transitive = true }
+
+    compile 'com.android.support:recyclerview-v7:25.4.0'
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    compile 'de.greenrobot:eventbus:2.4.0'
+
+
+}
+
+//apply from: '../maven_push.gradle'

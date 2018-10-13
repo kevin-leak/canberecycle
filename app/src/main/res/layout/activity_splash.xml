@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSplash">
+
+    <ImageView
+        android:id="@+id/startIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/energy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvVersionName"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="can be recycle"
+        android:textColor="#83ae46"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvVersionName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:visibility="gone"
+        android:scrollbarStyle="outsideOverlay" />
+    <SeekBar
+        android:id="@+id/sb_download_APK"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:fadeScrollbars="false"
+        android:focusable="false"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:progressTint="@color/colorWhite"
+        android:thumb="@drawable/thumb_bar" />
+
+
+    <TextView
+        android:id="@+id/tvVersionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="50dp"/>
+
+
+</RelativeLayout>

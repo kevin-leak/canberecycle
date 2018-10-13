@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mine" >
+
+    <application>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".NeedActivity"/>
+    </application>
+
+</manifest>

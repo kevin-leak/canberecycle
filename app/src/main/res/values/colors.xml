@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#83ae46</color>
+    <color name="colorPrimaryDark">#83ae46</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorSplash">#fdfdfe</color>
+    <drawable name="tmb_up">#FFFFFF</drawable>
+    <drawable name="tmb_dn">#FFFFFF</drawable>
+</resources>
