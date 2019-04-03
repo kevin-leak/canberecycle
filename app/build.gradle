@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-    buildToolsVersion "26.0.2"
     defaultConfig {
         applicationId "com.example.lostandfoudfirst"
         minSdkVersion 15
@@ -20,18 +19,18 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     //noinspection GradleCompatible
-    compile 'com.android.support:design:27.1.0'
-    compile 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    compile project(':common')
-    compile project(':home')
-    compile project(':message')
-    compile project(':mine')
-    compile project(':car')
-    compile 'com.ashokvarma.android:bottom-navigation-bar:1.2.0'
-    compile project(':recycle')
+    api project(':common')
+    api project(':home')
+    api project(':message')
+    api project(':mine')
+    api project(':car')
+    api 'com.ashokvarma.android:bottom-navigation-bar:1.2.0'
+    api project(':recycle')
 }
