@@ -75,7 +75,7 @@
                 android:layout_width="200dp"
                 android:layout_height="25dp"
                 android:layout_centerHorizontal="true"
-                android:hint="手机号"
+                android:hint="手机号码"
                 android:singleLine="true"
                 android:inputType="phone"
                 android:background="@null"
@@ -88,8 +88,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@color/colorApp"
-            />
+            android:background="@color/colorApp" />
 
 
         <RelativeLayout
@@ -198,41 +197,32 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/rl_category"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_category"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp">-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="25dp"
-                android:text="角色  "
-                android:layout_marginLeft="5dp"
-                android:layout_centerVertical="true"
-                android:gravity="center_vertical"/>
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:text="角色  "-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:gravity="center_vertical"/>-->
 
+            <!---->
 
-            <Spinner
-                android:id="@+id/sp_category"
-                android:padding="15dp"
-                android:singleLine="true"
-                android:layout_marginLeft="50dp"
-                android:layout_centerVertical="true"
-                android:layout_width="match_parent"
-                android:theme="@style/SpnStyle"
-                android:layout_height="50dp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:layout_alignParentBottom="true"
-                android:background="@color/colorApp" />
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:background="@color/colorApp" />-->
 
 
-        </RelativeLayout>
+        <!--</RelativeLayout>-->
 
         <Button
             android:id="@+id/btn_submit"
@@ -260,7 +250,7 @@
                 android:id="@+id/tv_switch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="没有账号？/注册"
+                android:text="没有账号？/关联"
                 android:textColor="@color/colorApp"
                 android:layout_alignParentRight="true"/>
         </RelativeLayout>

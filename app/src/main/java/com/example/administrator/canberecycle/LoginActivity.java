@@ -2,6 +2,7 @@ package com.example.administrator.canberecycle;
 
 import android.Manifest;
 import android.animation.ValueAnimator;
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -68,6 +69,7 @@ public class LoginActivity extends AppCompatActivity {
     /** 存储的文件名 */
     public static final String DATABASE = "Database";
     /** 存储后的文件路径：/data/data/<package name>/shares_prefs + 文件名.xml */
+    @SuppressLint("SdCardPath")
     public static final String PATH = "/data/data/code.sharedpreferences/shared_prefs/Database.xml";
 
     private CircleImageView iv_select;
@@ -120,7 +122,7 @@ public class LoginActivity extends AppCompatActivity {
         initPermission();
         initView();
 
-        setCharacter();
+//        setCharacter();
 
 
         //注册登入信息提交按钮
@@ -201,7 +203,7 @@ public class LoginActivity extends AppCompatActivity {
                 isRegister = true;
                 tv_forget.setVisibility(View.INVISIBLE);
                 tv_switch.setVisibility(View.INVISIBLE);
-                rl_category.setVisibility(View.VISIBLE);
+//                rl_category.setVisibility(View.VISIBLE);
                 rl_name.setVisibility(View.VISIBLE);
                 rl_code.setVisibility(View.VISIBLE);
                 iv_select.setClickable(true);
@@ -209,6 +211,8 @@ public class LoginActivity extends AppCompatActivity {
                 iv_select.setBorderColor(Color.parseColor("#83ae46"));
                 iv_select.setBorderWidth(2);
                 btn_submit.setText("注册");
+
+
 
             }
         });
@@ -385,7 +389,7 @@ public class LoginActivity extends AppCompatActivity {
                         @Override
                         public void done(AVIMClient avimClient, AVIMException e) {
                             if (null == e) {
-                                saveCharacter();
+//                                saveCharacter();
                                 hideProgressDialog();
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 startActivity(intent);
@@ -420,7 +424,7 @@ public class LoginActivity extends AppCompatActivity {
         tv_forget = findViewById(R.id.tv_forget);
         tv_name = findViewById(R.id.tv_name);
         sp_category = findViewById(R.id.sp_category);
-        rl_category = findViewById(R.id.rl_category);
+//        rl_category = findViewById(R.id.rl_category);
         rl_name = findViewById(R.id.rl_name);
         iv_see = findViewById(R.id.iv_see);
         btn_getCode = findViewById(R.id.btn_getCode);
